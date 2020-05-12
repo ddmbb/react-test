@@ -1,7 +1,12 @@
 import React from "react";
+import Bomb from "./state-drills/Bomb.js";
 
 function App() {
-  return <main className="App">{/* content goes here */}</main>;
+  return (
+    <main className="App">
+      <Bomb />
+    </main>
+  );
 }
 
 export default App;

@@ -5,7 +5,7 @@ function leapYear(year) {
   const div400 = year % 400 === 0;
   const div100 = year % 100 === 0;
   const div4 = year % 4 === 0;
-  return div400 || div4 || !div100;
+  return div400 || (div4 && !div100);
 }
 
 // The next line makes the function available to other JavaScript modules
